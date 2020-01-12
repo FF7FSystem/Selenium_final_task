@@ -6,7 +6,10 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM = (By.XPATH, "//form[@id='login_form']")
     REG_FORM = (By.XPATH, "//form[@id='register_form']")
-
+    INPUT_EMAIL = (By.XPATH, "//input[@name='registration-email']")
+    INPUT_PASSWORD_1 = (By.XPATH, "//input[@name='registration-password1']")
+    INPUT_PASSWORD_2 = (By.XPATH, "//input[@name='registration-password2']")
+    REG_BUTTON = (By.XPATH, "//button[@name='registration_submit']")
 
 
 class BasketPageLocators():
@@ -20,6 +23,8 @@ class BasketPageLocators():
 
 class ProductPageLocators():
     SUCCESS_MESSAGE = (By.XPATH, "//strong[text()='Deferred benefit offer']")
+    LOGIN_LINK = (By.XPATH, "//a[@id='login_link']")
+    MINI_BASKET = (By.XPATH, "//div[contains(@class,'basket-mini')]")
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
